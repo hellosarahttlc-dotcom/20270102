@@ -1,663 +1,686 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d6d6d; -webkit-text-stroke: #6d6d6d}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0000ff; -webkit-text-stroke: #0000ff}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6b0001; -webkit-text-stroke: #6b0001}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #fb0007; -webkit-text-stroke: #fb0007}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0f7001; -webkit-text-stroke: #0f7001}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000; min-height: 16.0px}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #093c94; -webkit-text-stroke: #093c94}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #137646; -webkit-text-stroke: #137646}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #900112; -webkit-text-stroke: #900112}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0e6e6d; -webkit-text-stroke: #0e6e6d}
-    span.s1 {font-kerning: none; background-color: #fffffe}
-    span.s2 {font-kerning: none; color: #fb0007; background-color: #fffffe; -webkit-text-stroke: 0px #fb0007}
-    span.s3 {font-kerning: none; color: #2a2a2a; background-color: #fffffe; -webkit-text-stroke: 0px #2a2a2a}
-    span.s4 {font-kerning: none; color: #6b0001; background-color: #fffffe; -webkit-text-stroke: 0px #6b0001}
-    span.s5 {font-kerning: none; color: #000000; background-color: #fffffe; -webkit-text-stroke: 0px #000000}
-    span.s6 {font-kerning: none; color: #0000ff; background-color: #fffffe; -webkit-text-stroke: 0px #0000ff}
-    span.s7 {font-kerning: none}
-    span.s8 {font-kerning: none; color: #093c94; background-color: #fffffe; -webkit-text-stroke: 0px #093c94}
-    span.s9 {font-kerning: none; color: #900112; background-color: #fffffe; -webkit-text-stroke: 0px #900112}
-    span.s10 {font-kerning: none; color: #137646; background-color: #fffffe; -webkit-text-stroke: 0px #137646}
-    span.s11 {font-kerning: none; color: #0f7001; background-color: #fffffe; -webkit-text-stroke: 0px #0f7001}
-    span.s12 {font-kerning: none; color: #0e6e6d; background-color: #fffffe; -webkit-text-stroke: 0px #0e6e6d}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>榮祥 & 奕晏 — 結婚典禮流程</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: 典雅正式、筆畫清晰不沾黏的繁體中文思源宋體 & 思源黑體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --night-sky: #182238;
+            --warm-cream: #fdf9f1;
+            --ink-charcoal: #26211d;
+            --doodle-gold: #dfa844;
+            --gryffindor-coral: #a63737;
+            --ravenclaw-teal: #35637d;
+        }
+
+        body {
+            /* 採用筆畫清晰、正式優雅的思源黑體與思源宋體，解決「禱」字跑掉與粗體沾黏問題 */
+            font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--night-sky);
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(229, 169, 60, 0.14) 0%, transparent 45%),
+                radial-gradient(circle at 85% 30%, rgba(184, 59, 59, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 50% 85%, rgba(59, 110, 140, 0.15) 0%, transparent 50%);
+            color: var(--warm-cream);
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            letter-spacing: 0.03em;
+        }
+
+        .font-serif-formal {
+            font-family: 'Noto Serif TC', Georgia, serif;
+        }
+
+        .font-en-formal {
+            font-family: 'Cinzel', Georgia, serif;
+        }
+
+        /* 保留微手繪感的溫潤羊皮紙卡片，但線條更精緻俐落 */
+        .doodle-card {
+            background-color: var(--warm-cream);
+            background-image: radial-gradient(#e5d7be 0.65px, transparent 0.65px);
+            background-size: 16px 16px;
+            color: var(--ink-charcoal);
+            border: 2px solid #3a2e25;
+            border-radius: 20px 16px 22px 18px / 18px 22px 16px 20px;
+            box-shadow: 4px 5px 0px rgba(223, 168, 68, 0.4), 0 10px 24px rgba(0, 0, 0, 0.35);
+            position: relative;
+        }
+
+        /* 紙膠帶裝飾效果 */
+        .washi-tape {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-1deg);
+            width: 88px;
+            height: 20px;
+            background-color: rgba(223, 168, 68, 0.65);
+            border-left: 1.5px dashed rgba(255,255,255,0.55);
+            border-right: 1.5px dashed rgba(255,255,255,0.55);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            z-index: 5;
+        }
+
+        /* 編號徽章 */
+        .doodle-badge {
+            background-color: var(--gryffindor-coral);
+            color: #fff9eb;
+            border: 1.5px solid #3a2e25;
+            border-radius: 50% 46% 48% 52% / 52% 48% 52% 48%;
+            box-shadow: 1.5px 1.5px 0px #3a2e25;
+        }
+
+        /* 虛線分隔 */
+        .doodle-divider {
+            border-bottom: 1.5px dashed rgba(58, 46, 37, 0.25);
+        }
+
+        /* 漂浮塗鴉與星光 Canvas */
+        #magic-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* 輕微搖擺動畫 */
+        @keyframes floatWiggle {
+            0%, 100% { transform: translateY(0px) rotate(-1.5deg); }
+            50% { transform: translateY(-4px) rotate(1.5deg); }
+        }
+        .animate-doodle {
+            animation: floatWiggle 4.5s ease-in-out infinite;
+        }
+
+        /* 分頁切換過渡 */
+        .tab-panel {
+            animation: fadeIn 0.25s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 手機底部安全區域適配 */
+        .safe-bottom {
+            padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+        }
+    </style>
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s3">&lt;</span><span class="s4">html</span><span class="s5"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s1">"zh-TW"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s6">"UTF-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s5"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">title</span><span class="s3">&gt;</span><span class="s1">榮祥 &amp; 奕晏 — 結婚典禮流程</span><span class="s3">&lt;/</span><span class="s4">title</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Tailwind CSS --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Google Fonts: 典雅正式、筆畫清晰不沾黏的繁體中文思源宋體 &amp; 思源黑體 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">link</span><span class="s5"> </span><span class="s2">rel</span><span class="s3">=</span><span class="s1">"preconnect"</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://fonts.googleapis.com"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">link</span><span class="s5"> </span><span class="s2">rel</span><span class="s3">=</span><span class="s1">"preconnect"</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://fonts.gstatic.com"</span><span class="s5"> </span><span class="s2">crossorigin</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">link</span><span class="s5"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Serif+TC:wght@500;600;700&amp;display=swap"</span><span class="s5"> </span><span class="s2">rel</span><span class="s3">=</span><span class="s1">"stylesheet"</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Lucide Icons --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/lucide@latest"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">:root</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--night-sky:</span><span class="s1"> </span><span class="s8">#182238</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--warm-cream:</span><span class="s1"> </span><span class="s8">#fdf9f1</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">--ink-charcoal:</span><span class="s5"> </span><span class="s8">#26211d</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--doodle-gold:</span><span class="s1"> </span><span class="s8">#dfa844</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">--gryffindor-coral:</span><span class="s5"> </span><span class="s8">#a63737</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">--ravenclaw-teal:</span><span class="s5"> </span><span class="s8">#35637d</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">body</span><span class="s1"> {</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">/* 採用筆畫清晰、正式優雅的思源黑體與思源宋體，解決「禱」字跑掉與粗體沾黏問題 */</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s5"> </span><span class="s9">'Noto Sans TC'</span><span class="s5">, </span><span class="s1">-apple-system</span><span class="s5">, </span><span class="s1">BlinkMacSystemFont</span><span class="s5">, </span><span class="s1">sans-serif</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s5"> </span><span class="s8">var(--night-sky)</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-image:</span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">radial-gradient(circle</span><span class="s5"> </span><span class="s1">at</span><span class="s5"> </span><span class="s10">15%</span><span class="s5"> </span><span class="s10">15%</span><span class="s5">, </span><span class="s1">rgba(</span><span class="s10">229</span><span class="s5">, </span><span class="s10">169</span><span class="s5">, </span><span class="s10">60</span><span class="s5">, </span><span class="s10">0.14</span><span class="s1">)</span><span class="s5"> </span><span class="s10">0%</span><span class="s5">, </span><span class="s1">transparent</span><span class="s5"> </span><span class="s10">45%</span><span class="s1">)</span><span class="s5">,</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">radial-gradient(circle</span><span class="s5"> </span><span class="s1">at</span><span class="s5"> </span><span class="s10">85%</span><span class="s5"> </span><span class="s10">30%</span><span class="s5">, </span><span class="s1">rgba(</span><span class="s10">184</span><span class="s5">, </span><span class="s10">59</span><span class="s5">, </span><span class="s10">59</span><span class="s5">, </span><span class="s10">0.12</span><span class="s1">)</span><span class="s5"> </span><span class="s10">0%</span><span class="s5">, </span><span class="s1">transparent</span><span class="s5"> </span><span class="s10">45%</span><span class="s1">)</span><span class="s5">,</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">radial-gradient(circle</span><span class="s5"> </span><span class="s1">at</span><span class="s5"> </span><span class="s10">50%</span><span class="s5"> </span><span class="s10">85%</span><span class="s5">, </span><span class="s1">rgba(</span><span class="s10">59</span><span class="s5">, </span><span class="s10">110</span><span class="s5">, </span><span class="s10">140</span><span class="s5">, </span><span class="s10">0.15</span><span class="s1">)</span><span class="s5"> </span><span class="s10">0%</span><span class="s5">, </span><span class="s1">transparent</span><span class="s5"> </span><span class="s10">50%</span><span class="s1">)</span><span class="s5">;</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s5"> </span><span class="s1">var(--warm-cream)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">overflow-x:</span><span class="s1"> </span><span class="s8">hidden</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">-webkit-tap-highlight-color:</span><span class="s5"> </span><span class="s8">transparent</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">letter-spacing:</span><span class="s5"> </span><span class="s10">0.03em</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.font-serif-formal</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s1"> </span><span class="s9">'Noto Serif TC'</span><span class="s1">, </span><span class="s8">Georgia</span><span class="s1">, </span><span class="s8">serif</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.font-en-formal</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s1"> </span><span class="s9">'Cinzel'</span><span class="s1">, </span><span class="s8">Georgia</span><span class="s1">, </span><span class="s8">serif</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* 保留微手繪感的溫潤羊皮紙卡片，但線條更精緻俐落 */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.doodle-card</span><span class="s5"> {</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s5"> </span><span class="s8">var(--warm-cream)</span><span class="s5">;</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">background-image:</span><span class="s5"> </span><span class="s1">radial-gradient(#e5d7be</span><span class="s5"> </span><span class="s10">0.65px</span><span class="s5">, </span><span class="s1">transparent</span><span class="s5"> </span><span class="s10">0.65px</span><span class="s1">)</span><span class="s5">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">background-size:</span><span class="s5"> </span><span class="s10">16px</span><span class="s5"> </span><span class="s10">16px</span><span class="s5">;</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s5"> </span><span class="s1">var(--ink-charcoal)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s10">2px</span><span class="s1"> </span><span class="s8">solid</span><span class="s1"> </span><span class="s8">#3a2e25</span><span class="s1">;</span></p>
-<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s5"> </span><span class="s1">20px</span><span class="s5"> </span><span class="s1">16px</span><span class="s5"> </span><span class="s1">22px</span><span class="s5"> </span><span class="s1">18px</span><span class="s5"> / </span><span class="s1">18px</span><span class="s5"> </span><span class="s1">22px</span><span class="s5"> </span><span class="s1">16px</span><span class="s5"> </span><span class="s1">20px</span><span class="s5">;</span></p>
-<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s5"> </span><span class="s1">4px</span><span class="s5"> </span><span class="s1">5px</span><span class="s5"> </span><span class="s1">0px</span><span class="s5"> </span><span class="s8">rgba(</span><span class="s1">223</span><span class="s5">, </span><span class="s1">168</span><span class="s5">, </span><span class="s1">68</span><span class="s5">, </span><span class="s1">0.4</span><span class="s8">)</span><span class="s5">, </span><span class="s1">0</span><span class="s5"> </span><span class="s1">10px</span><span class="s5"> </span><span class="s1">24px</span><span class="s5"> </span><span class="s8">rgba(</span><span class="s1">0</span><span class="s5">, </span><span class="s1">0</span><span class="s5">, </span><span class="s1">0</span><span class="s5">, </span><span class="s1">0.35</span><span class="s8">)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">position:</span><span class="s1"> </span><span class="s8">relative</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* 紙膠帶裝飾效果 */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.washi-tape</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">position:</span><span class="s1"> </span><span class="s8">absolute</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">top:</span><span class="s1"> </span><span class="s10">-10px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">left:</span><span class="s1"> </span><span class="s10">50%</span><span class="s1">;</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s5"> </span><span class="s1">translateX(</span><span class="s10">-50%</span><span class="s1">)</span><span class="s5"> </span><span class="s1">rotate(</span><span class="s10">-1deg</span><span class="s1">)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s10">88px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">height:</span><span class="s1"> </span><span class="s10">20px</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s10">223</span><span class="s1">, </span><span class="s10">168</span><span class="s1">, </span><span class="s10">68</span><span class="s1">, </span><span class="s10">0.65</span><span class="s8">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-left:</span><span class="s1"> </span><span class="s10">1.5px</span><span class="s1"> </span><span class="s8">dashed</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s10">255</span><span class="s1">,</span><span class="s10">255</span><span class="s1">,</span><span class="s10">255</span><span class="s1">,</span><span class="s10">0.55</span><span class="s8">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-right:</span><span class="s1"> </span><span class="s10">1.5px</span><span class="s1"> </span><span class="s8">dashed</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s10">255</span><span class="s1">,</span><span class="s10">255</span><span class="s1">,</span><span class="s10">255</span><span class="s1">,</span><span class="s10">0.55</span><span class="s8">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s10">0</span><span class="s1"> </span><span class="s10">2px</span><span class="s1"> </span><span class="s10">4px</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s10">0</span><span class="s1">,</span><span class="s10">0</span><span class="s1">,</span><span class="s10">0</span><span class="s1">,</span><span class="s10">0.08</span><span class="s8">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">z-index:</span><span class="s1"> </span><span class="s10">5</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* 編號徽章 */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.doodle-badge</span><span class="s5"> {</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s5"> </span><span class="s1">var(--gryffindor-coral)</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s8">#fff9eb</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s10">1.5px</span><span class="s1"> </span><span class="s8">solid</span><span class="s1"> </span><span class="s8">#3a2e25</span><span class="s1">;</span></p>
-<p class="p9"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s5"> </span><span class="s1">50%</span><span class="s5"> </span><span class="s1">46%</span><span class="s5"> </span><span class="s1">48%</span><span class="s5"> </span><span class="s1">52%</span><span class="s5"> / </span><span class="s1">52%</span><span class="s5"> </span><span class="s1">48%</span><span class="s5"> </span><span class="s1">52%</span><span class="s5"> </span><span class="s1">48%</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s10">1.5px</span><span class="s1"> </span><span class="s10">1.5px</span><span class="s1"> </span><span class="s10">0px</span><span class="s1"> </span><span class="s8">#3a2e25</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* 虛線分隔 */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.doodle-divider</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-bottom:</span><span class="s1"> </span><span class="s10">1.5px</span><span class="s1"> </span><span class="s8">dashed</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s10">58</span><span class="s1">, </span><span class="s10">46</span><span class="s1">, </span><span class="s10">37</span><span class="s1">, </span><span class="s10">0.25</span><span class="s8">)</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* 漂浮塗鴉與星光 Canvas */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">#magic-canvas</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">position:</span><span class="s1"> </span><span class="s8">fixed</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">top:</span><span class="s1"> </span><span class="s10">0</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">left:</span><span class="s1"> </span><span class="s10">0</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s10">100%</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">height:</span><span class="s1"> </span><span class="s10">100%</span><span class="s1">;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">pointer-events:</span><span class="s5"> </span><span class="s8">none</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">z-index:</span><span class="s1"> </span><span class="s10">0</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* 輕微搖擺動畫 */</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">@keyframes</span><span class="s1"> </span><span class="s8">floatWiggle</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s10">0%</span><span class="s1">, </span><span class="s10">100%</span><span class="s1"> { </span><span class="s2">transform:</span><span class="s1"> </span><span class="s8">translateY(</span><span class="s10">0px</span><span class="s8">)</span><span class="s1"> </span><span class="s8">rotate(</span><span class="s10">-1.5deg</span><span class="s8">)</span><span class="s1">; }</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s10">50%</span><span class="s1"> { </span><span class="s2">transform:</span><span class="s1"> </span><span class="s8">translateY(</span><span class="s10">-4px</span><span class="s8">)</span><span class="s1"> </span><span class="s8">rotate(</span><span class="s10">1.5deg</span><span class="s8">)</span><span class="s1">; }</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.animate-doodle</span><span class="s5"> {</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">animation:</span><span class="s5"> </span><span class="s1">floatWiggle</span><span class="s5"> </span><span class="s10">4.5s</span><span class="s5"> </span><span class="s1">ease-in-out</span><span class="s5"> </span><span class="s1">infinite</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* 分頁切換過渡 */</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">.tab-panel</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">animation:</span><span class="s1"> </span><span class="s8">fadeIn</span><span class="s1"> </span><span class="s10">0.25s</span><span class="s1"> </span><span class="s8">ease-out</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">@keyframes</span><span class="s1"> </span><span class="s8">fadeIn</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">from</span><span class="s1"> { </span><span class="s2">opacity:</span><span class="s1"> </span><span class="s10">0</span><span class="s1">; </span><span class="s2">transform:</span><span class="s1"> </span><span class="s8">translateY(</span><span class="s10">6px</span><span class="s8">)</span><span class="s1">; }</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">to</span><span class="s1"> { </span><span class="s2">opacity:</span><span class="s1"> </span><span class="s10">1</span><span class="s1">; </span><span class="s2">transform:</span><span class="s1"> </span><span class="s8">translateY(</span><span class="s10">0</span><span class="s8">)</span><span class="s1">; }</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">/* 手機底部安全區域適配 */</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.safe-bottom</span><span class="s5"> {</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">padding-bottom:</span><span class="s5"> </span><span class="s1">max(</span><span class="s10">0.75rem</span><span class="s5">, </span><span class="s1">env(safe-area-inset-bottom))</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s3">&lt;</span><span class="s4">body</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"min-h-screen flex flex-col items-center relative selection:bg-amber-300/40"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- 背景動態手繪小塗鴉與星光 Canvas --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">canvas</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"magic-canvas"</span><span class="s3">&gt;&lt;/</span><span class="s4">canvas</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- 手機優先主容器 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-full max-w-md min-h-screen flex flex-col relative z-10 pb-28"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">&lt;!-- 頂部標頭 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">header</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"pt-7 pb-5 px-4 text-center relative"</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 手繪風魔法小插畫 (金探子翅膀 + 十字架 + 閃電星芒) --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mx-auto w-24 h-16 mb-2 animate-doodle flex items-center justify-center"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">svg</span><span class="s5"> </span><span class="s2">viewBox</span><span class="s3">=</span><span class="s1">"0 0 160 110"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-full h-full overflow-visible"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M58 55 C35 35, 10 38, 8 48 C22 50, 35 53, 45 58 C28 58, 16 62, 14 68 C28 68, 42 66, 56 64"</span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">                          </span></span><span class="s1">fill</span><span class="s3">=</span><span class="s6">"#fff8e7"</span><span class="s5"> </span><span class="s1">stroke</span><span class="s3">=</span><span class="s6">"#f5c45e"</span><span class="s5"> </span><span class="s1">stroke-width</span><span class="s3">=</span><span class="s6">"2.2"</span><span class="s5"> </span><span class="s1">stroke-linecap</span><span class="s3">=</span><span class="s6">"round"</span><span class="s5"> </span><span class="s1">stroke-linejoin</span><span class="s3">=</span><span class="s6">"round"</span><span class="s3">/&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M102 55 C125 35, 150 38, 152 48 C138 50, 125 53, 115 58 C132 58, 144 62, 146 68 C132 68, 118 66, 104 64"</span><span class="s5"><span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">                          </span></span><span class="s1">fill</span><span class="s3">=</span><span class="s6">"#fff8e7"</span><span class="s5"> </span><span class="s1">stroke</span><span class="s3">=</span><span class="s6">"#f5c45e"</span><span class="s5"> </span><span class="s1">stroke-width</span><span class="s3">=</span><span class="s6">"2.2"</span><span class="s5"> </span><span class="s1">stroke-linecap</span><span class="s3">=</span><span class="s6">"round"</span><span class="s5"> </span><span class="s1">stroke-linejoin</span><span class="s3">=</span><span class="s6">"round"</span><span class="s3">/&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">circle</span><span class="s5"> </span><span class="s2">cx</span><span class="s3">=</span><span class="s1">"80"</span><span class="s5"> </span><span class="s2">cy</span><span class="s3">=</span><span class="s1">"60"</span><span class="s5"> </span><span class="s2">r</span><span class="s3">=</span><span class="s1">"22"</span><span class="s5"> </span><span class="s2">fill</span><span class="s3">=</span><span class="s1">"#f5c45e"</span><span class="s5"> </span><span class="s2">stroke</span><span class="s3">=</span><span class="s1">"#26211d"</span><span class="s5"> </span><span class="s2">stroke-width</span><span class="s3">=</span><span class="s1">"2.2"</span><span class="s3">/&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M80 46 L80 73 M70 55 L90 55"</span><span class="s5"> </span><span class="s2">stroke</span><span class="s3">=</span><span class="s1">"#26211d"</span><span class="s5"> </span><span class="s2">stroke-width</span><span class="s3">=</span><span class="s1">"2.5"</span><span class="s5"> </span><span class="s2">stroke-linecap</span><span class="s3">=</span><span class="s1">"round"</span><span class="s3">/&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M82 14 L75 25 L83 25 L77 35"</span><span class="s5"> </span><span class="s2">fill</span><span class="s3">=</span><span class="s1">"none"</span><span class="s5"> </span><span class="s2">stroke</span><span class="s3">=</span><span class="s1">"#fde08d"</span><span class="s5"> </span><span class="s2">stroke-width</span><span class="s3">=</span><span class="s1">"2.2"</span><span class="s5"> </span><span class="s2">stroke-linecap</span><span class="s3">=</span><span class="s1">"round"</span><span class="s5"> </span><span class="s2">stroke-linejoin</span><span class="s3">=</span><span class="s1">"round"</span><span class="s3">/&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M44 26 L46 31 L51 33 L46 35 L44 40 L42 35 L37 33 L42 31 Z"</span><span class="s5"> </span><span class="s2">fill</span><span class="s3">=</span><span class="s1">"#fde08d"</span><span class="s3">/&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">path</span><span class="s5"> </span><span class="s2">d</span><span class="s3">=</span><span class="s1">"M118 22 L119.5 26 L123.5 27.5 L119.5 29 L118 33 L116.5 29 L112.5 27.5 L116.5 26 Z"</span><span class="s5"> </span><span class="s2">fill</span><span class="s3">=</span><span class="s1">"#fde08d"</span><span class="s3">/&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">svg</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-en-formal text-xs text-amber-300/90 tracking-[0.22em] uppercase mb-1"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>Wedding Ceremony</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-en-formal text-sm font-semibold text-amber-200 tracking-[0.25em] mb-2"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>2027.01.02</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">h1</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-3xl font-bold tracking-[0.12em] text-[#fff9eb] mb-2.5"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span>榮祥 </span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-en-formal text-amber-300 font-normal mx-1"</span><span class="s3">&gt;</span><span class="s5">&amp;amp;</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span><span class="s5"> 奕晏</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">h1</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"inline-block px-4 py-1 rounded-full bg-white/10 border border-amber-300/35 text-amber-100 text-xs font-medium tracking-[0.18em]"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>結婚典禮流程</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">header</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">&lt;!-- 內容主區塊 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">main</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-4 flex-1"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 分頁 1：典禮流程 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"tab-program"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"tab-panel space-y-5"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- 雙方主婚人卡片 (置頂呈現) --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"doodle-card p-4 pt-5"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"washi-tape"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-center mb-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-xs font-bold text-stone-700 tracking-[0.15em]"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>雙方主婚人</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-2 gap-2.5 text-center"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-white/85 border border-stone-800/20 rounded-xl p-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-[#a63737] block mb-1"</span><span class="s3">&gt;</span><span class="s5">男方主婚人</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-stone-900 text-base tracking-wider"</span><span class="s3">&gt;</span><span class="s5">王佩玲</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-white/85 border border-stone-800/20 rounded-xl p-3"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-[#35637d] block mb-1"</span><span class="s3">&gt;</span><span class="s5">女方主婚人</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-stone-900 text-base tracking-wider"</span><span class="s3">&gt;</span><span class="s5">陳哲榮 &amp;nbsp;張秀珠</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- 婚禮流程表 (無多餘補充文字、無禮成拍照、無 Emoji) --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"doodle-card p-5"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-center doodle-divider pb-3.5 mb-5"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-en-formal text-xs text-amber-800 tracking-[0.2em] uppercase block mb-0.5"</span><span class="s3">&gt;</span><span class="s5">Order of Service</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-lg font-bold text-stone-900 tracking-[0.1em]"</span><span class="s3">&gt;</span><span class="s5">結婚典禮流程</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s11">&lt;!-- 手繪虛線時間軸 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"relative pl-5 border-l-2 border-dashed border-stone-800/30 space-y-5"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s11">&lt;!-- 1 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"relative"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-stone-800"</span><span class="s3">&gt;&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-base text-stone-900 tracking-wide"</span><span class="s3">&gt;</span><span class="s5">宣召 &amp;amp; 序樂 &amp;amp; 進場</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0"</span><span class="s3">&gt;</span><span class="s5">詹文仁 牧師</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s11">&lt;!-- 2 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"relative"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-[#a63737] border-2 border-stone-800"</span><span class="s3">&gt;&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-base text-stone-900 tracking-wide"</span><span class="s3">&gt;</span><span class="s5">敬拜</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0"</span><span class="s3">&gt;</span><span class="s5">全體賓客</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s1"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s6">"switchTab('hymns')"</span><span class="s1"><span class="Apple-converted-space"> </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-white bg-[#a63737] border border-stone-800 shadow-[1.5px_1.5px_0px_#26211d] active:translate-y-0.5 px-3 py-1.5 rounded-full transition"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"music"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-3.5 h-3.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;</span><span class="s1">查看詩歌歌詞</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"chevron-right"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-3.5 h-3.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s11">&lt;!-- 3 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"relative"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-stone-800"</span><span class="s3">&gt;&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-start gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-base text-stone-900 tracking-wide shrink-0"</span><span class="s3">&gt;</span><span class="s5">讀經</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full text-right"</span><span class="s3">&gt;</span><span class="s5">謝秉諺 姚柔伊傳道夫婦</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s1"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s6">"switchTab('scripture')"</span><span class="s1"><span class="Apple-converted-space"> </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-stone-900 bg-amber-300 border border-stone-800 shadow-[1.5px_1.5px_0px_#26211d] active:translate-y-0.5 px-3 py-1.5 rounded-full transition"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"book-open"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-3.5 h-3.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s3">&gt;</span><span class="s1">查看今日經文</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"chevron-right"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-3.5 h-3.5"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s11">&lt;!-- 4 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"relative"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-stone-800"</span><span class="s3">&gt;&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-base text-stone-900 tracking-wide"</span><span class="s3">&gt;</span><span class="s5">牧者勉勵</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0"</span><span class="s3">&gt;</span><span class="s5">黃國康 牧師</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s11">&lt;!-- 5 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"relative"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-[#a63737] border-2 border-stone-800"</span><span class="s3">&gt;&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-base text-stone-900 tracking-wide"</span><span class="s3">&gt;</span><span class="s5">證婚 &amp;amp; 誓約</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0"</span><span class="s3">&gt;</span><span class="s5">詹文仁 牧師</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s11">&lt;!-- 6 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"relative"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-stone-800"</span><span class="s3">&gt;&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-base text-stone-900 tracking-wide"</span><span class="s3">&gt;</span><span class="s5">謝親恩</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0"</span><span class="s3">&gt;</span><span class="s5">新人</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s11">&lt;!-- 7 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"relative"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-[#35637d] border-2 border-stone-800"</span><span class="s3">&gt;&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-between items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">h3</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal font-bold text-base text-stone-900 tracking-wide"</span><span class="s3">&gt;</span><span class="s5">祝禱</span><span class="s3">&lt;/</span><span class="s4">h3</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0"</span><span class="s3">&gt;</span><span class="s5">詹文仁 牧師</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s11">&lt;!-- 祝禱下方合影提醒 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-6 pt-4 border-t border-dashed border-stone-800/25 text-center"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-sm font-semibold text-stone-800 tracking-wide"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>典禮結束後，敬請留步於會場與新人合影</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 分頁 2：詩歌歌詞 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"tab-hymns"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"tab-panel hidden space-y-5"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s11">&lt;!-- 字體大小切換列 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center justify-between bg-white/10 border border-amber-300/35 rounded-2xl px-4 py-2.5"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs text-amber-100/90 font-medium tracking-wider"</span><span class="s3">&gt;</span><span class="s5">歌詞字級調整</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center gap-2"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"btn-size-normal"</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"setLyricSize('text-base')"</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-3 py-1 rounded-xl text-xs bg-amber-300 text-stone-900 font-bold transition"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>標準</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"btn-size-large"</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"setLyricSize('text-lg')"</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                            </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"px-3 py-1 rounded-xl text-xs bg-white/15 text-amber-100 font-medium transition"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>放大</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- 詩歌一：唯一的力量 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"doodle-card p-5 pt-6"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"washi-tape"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-center doodle-divider pb-3 mb-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-[#a63737] tracking-widest block mb-1"</span><span class="s3">&gt;</span><span class="s5">敬拜詩歌 I</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-xl font-bold text-stone-900 tracking-wider"</span><span class="s3">&gt;</span><span class="s5">唯一的力量</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"lyric-body text-base text-stone-800 leading-relaxed space-y-4 text-center font-medium"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>唯一的力量 唯一的信仰</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>堅定自己的方向</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>也是會哭 也是會沮喪</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>但是從不放棄有愛的地方</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>就是那股想愛的衝動</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>深陷下去 無法自拔</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>滿是愛的教會</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>就是我的家</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>因為我知道</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>我總是不孤單</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>我有甜蜜 有溫暖的家</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>勇敢去追求</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>就不怕失去什麼</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>仔細聆聽 從天降下的感動</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>一生的執著 耶穌愛我</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s1">&lt;!-- 詩歌二：祢使我勇敢 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"doodle-card p-5 pt-6"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"washi-tape"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-center doodle-divider pb-3 mb-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs font-medium text-[#35637d] tracking-widest block mb-1"</span><span class="s3">&gt;</span><span class="s5">敬拜詩歌 II</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-xl font-bold text-stone-900 tracking-wider"</span><span class="s3">&gt;</span><span class="s5">祢使我勇敢</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"lyric-body text-base text-stone-800 leading-relaxed space-y-4 text-center font-medium"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>沒有懲罰 沒有重擔</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>因我活在祢愛裡</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>可以坦然面對自己</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>我的恐懼 我的軟弱</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>全都交在祢手中</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>I am not alone</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>祢會為我撐傘 是我的安全感</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>輕看一切困難 盼望未來</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>自由踏出步伐 釋放我的情感</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>祢使我勇敢</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>不再為明天憂慮</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>將與美好事相遇</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>萬事(都)互相效力</span><span class="s3">&lt;</span><span class="s4">br</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>我已(經)得著能力</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 分頁 3：今日經文 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"tab-scripture"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"tab-panel hidden space-y-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"doodle-card p-6 pt-7 text-center"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"washi-tape"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"doodle-divider pb-3.5 mb-5"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-en-formal text-xs text-amber-800 tracking-[0.2em] uppercase block mb-0.5"</span><span class="s3">&gt;</span><span class="s5">Scripture Reading</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-lg font-bold text-stone-900 tracking-[0.1em]"</span><span class="s3">&gt;</span><span class="s5">今日經文</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xs text-stone-600 mt-1"</span><span class="s3">&gt;</span><span class="s1">讀經：謝秉諺 姚柔伊傳道夫婦</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-8 px-4 rounded-xl bg-white/75 border border-dashed border-stone-800/25"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-base text-stone-700 tracking-wider"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>經文章節敬請期待</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 分頁 4：合影順序 --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">section</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"tab-photos"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"tab-panel hidden space-y-4"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"doodle-card p-5"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-center doodle-divider pb-3.5 mb-4"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-en-formal text-xs text-amber-800 tracking-[0.2em] uppercase block mb-0.5"</span><span class="s3">&gt;</span><span class="s5">Group Photos</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s4">h2</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-serif-formal text-lg font-bold text-stone-900 tracking-[0.1em]"</span><span class="s3">&gt;</span><span class="s5">合影順序</span><span class="s3">&lt;/</span><span class="s4">h2</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">ol</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"space-y-2.5"</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"photo-list"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s11">&lt;!-- 由 JS 渲染 12 組名單 --&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s4">ol</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">section</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">main</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">&lt;!-- 底部固定導覽列 (一直顯示在手機下方，方便單手切換頁面) --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">nav</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fixed bottom-0 left-0 right-0 z-30 flex justify-center px-3 pt-2 safe-bottom bg-gradient-to-t from-[#111827] via-[#182238]/95 to-transparent"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-full max-w-md bg-[#222f4b]/95 backdrop-blur-md border border-amber-300/45 rounded-2xl p-1.5 shadow-[0_8px_25px_rgba(0,0,0,0.65)] grid grid-cols-4 gap-1"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"switchTab('program')"</span><span class="s5"> </span><span class="s2">data-tab</span><span class="s3">=</span><span class="s1">"program"</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"nav-btn active flex flex-col items-center justify-center py-2 px-1 rounded-xl text-stone-900 bg-amber-300 border border-stone-900 font-bold transition"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"scroll"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4 mb-1"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xs tracking-wider"</span><span class="s3">&gt;</span><span class="s1">典禮流程</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"switchTab('hymns')"</span><span class="s5"> </span><span class="s2">data-tab</span><span class="s3">=</span><span class="s1">"hymns"</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"nav-btn flex flex-col items-center justify-center py-2 px-1 rounded-xl text-amber-100/80 hover:text-amber-200 border border-transparent font-medium transition"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"music"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4 mb-1"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xs tracking-wider"</span><span class="s3">&gt;</span><span class="s1">詩歌歌詞</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"switchTab('scripture')"</span><span class="s5"> </span><span class="s2">data-tab</span><span class="s3">=</span><span class="s1">"scripture"</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"nav-btn flex flex-col items-center justify-center py-2 px-1 rounded-xl text-amber-100/80 hover:text-amber-200 border border-transparent font-medium transition"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s5"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s1">"book-open"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-4 h-4 mb-1"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xs tracking-wider"</span><span class="s3">&gt;</span><span class="s1">今日經文</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">button</span><span class="s5"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"switchTab('photos')"</span><span class="s5"> </span><span class="s2">data-tab</span><span class="s3">=</span><span class="s1">"photos"</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"nav-btn flex flex-col items-center justify-center py-2 px-1 rounded-xl text-amber-100/80 hover:text-amber-200 border border-transparent font-medium transition"</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">i</span><span class="s1"> </span><span class="s2">data-lucide</span><span class="s3">=</span><span class="s6">"camera"</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"w-4 h-4 mb-1"</span><span class="s3">&gt;&lt;/</span><span class="s4">i</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"text-xs tracking-wider"</span><span class="s3">&gt;</span><span class="s1">合影順序</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">nav</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 初始化 Lucide 圖示</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>lucide.createIcons();</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 合影順序資料</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">const</span><span class="s1"> photoGroups = [</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"雙方主婚人、牧長"</span><span class="s1">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"婚禮 &amp; 家宴工作人員"</span><span class="s1">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"榮祥家人"</span><span class="s1">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"奕晏家人"</span><span class="s1">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"奕晏國高中同學"</span><span class="s1">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"奕晏大學同學"</span><span class="s1">,</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"奕晏前同事 (統一獅、沐恩牙醫)"</span><span class="s5">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"榮祥奕晏的學青團契"</span><span class="s1">,</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"榮祥奕晏過去帶的學生與同工"</span><span class="s5">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"真理堂弟兄姊妹"</span><span class="s1">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"信義會弟兄姊妹"</span><span class="s1">,</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">"各方好友"</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 霍格華茲四學院配色（葛來分多紅、雷文克勞藍、赫夫帕夫黃、史萊哲林綠）</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">const</span><span class="s1"> houseColors = [</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{ bg: </span><span class="s9">'#a63737'</span><span class="s1">, text: </span><span class="s9">'#fff9eb'</span><span class="s1"> }, </span><span class="s11">// 紅</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{ bg: </span><span class="s9">'#35637d'</span><span class="s1">, text: </span><span class="s9">'#fff9eb'</span><span class="s1"> }, </span><span class="s11">// 藍</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{ bg: </span><span class="s9">'#e5a93c'</span><span class="s1">, text: </span><span class="s9">'#26211d'</span><span class="s1"> }, </span><span class="s11">// 黃（搭配深色字更清晰）</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{ bg: </span><span class="s9">'#386641'</span><span class="s1">, text: </span><span class="s9">'#fff9eb'</span><span class="s1"> }<span class="Apple-converted-space">  </span></span><span class="s11">// 綠</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 渲染合影順序列表</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">const</span><span class="s1"> photoListEl = document.getElementById(</span><span class="s9">'photo-list'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>photoGroups.forEach((group, idx) =&gt; {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">const</span><span class="s1"> num = idx + </span><span class="s10">1</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">const</span><span class="s1"> color = houseColors[idx % houseColors.length];</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">const</span><span class="s1"> li = document.createElement(</span><span class="s9">'li'</span><span class="s1">);</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">            </span>li.className = </span><span class="s1">"flex items-center gap-3 p-3 rounded-xl bg-white/85 border border-stone-800/15"</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>li.innerHTML = </span><span class="s9">`</span></p>
-<p class="p10"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span style="background-color: </span><span class="s5">${color.bg}</span><span class="s1">; color: </span><span class="s5">${color.text}</span><span class="s1">;" class="w-7 h-7 doodle-badge font-en-formal font-bold text-xs flex items-center justify-center shrink-0"&gt;</span></p>
-<p class="p10"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s5">${num}</span></p>
-<p class="p10"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/span&gt;</span></p>
-<p class="p10"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="font-medium text-stone-900 text-sm sm:text-base leading-snug"&gt;</span><span class="s5">${group}</span><span class="s1">&lt;/span&gt;</span></p>
-<p class="p10"><span class="s1"><span class="Apple-converted-space">            </span>`</span><span class="s5">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>photoListEl.appendChild(li);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 分頁切換邏輯</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">function</span><span class="s1"> switchTab(tabId) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll(</span><span class="s9">'.tab-panel'</span><span class="s1">).forEach(panel =&gt; {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>panel.classList.add(</span><span class="s9">'hidden'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">const</span><span class="s1"> target = document.getElementById(</span><span class="s9">`tab-</span><span class="s1">${tabId}</span><span class="s9">`</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">if</span><span class="s1"> (target) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>target.classList.remove(</span><span class="s9">'hidden'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll(</span><span class="s9">'.nav-btn'</span><span class="s1">).forEach(btn =&gt; {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">if</span><span class="s1"> (btn.dataset.tab === tabId) {</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">                    </span>btn.classList.add(</span><span class="s1">'text-stone-900'</span><span class="s5">, </span><span class="s1">'bg-amber-300'</span><span class="s5">, </span><span class="s1">'border-stone-900'</span><span class="s5">, </span><span class="s1">'font-bold'</span><span class="s5">);</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">                    </span>btn.classList.remove(</span><span class="s1">'text-amber-100/80'</span><span class="s5">, </span><span class="s1">'border-transparent'</span><span class="s5">, </span><span class="s1">'font-medium'</span><span class="s5">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} </span><span class="s6">else</span><span class="s1"> {</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">                    </span>btn.classList.remove(</span><span class="s1">'text-stone-900'</span><span class="s5">, </span><span class="s1">'bg-amber-300'</span><span class="s5">, </span><span class="s1">'border-stone-900'</span><span class="s5">, </span><span class="s1">'font-bold'</span><span class="s5">);</span></p>
-<p class="p10"><span class="s5"><span class="Apple-converted-space">                    </span>btn.classList.add(</span><span class="s1">'text-amber-100/80'</span><span class="s5">, </span><span class="s1">'border-transparent'</span><span class="s5">, </span><span class="s1">'font-medium'</span><span class="s5">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>window.scrollTo({ top: </span><span class="s10">0</span><span class="s1">, behavior: </span><span class="s9">'smooth'</span><span class="s1"> });</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 歌詞字體大小調整 (含按鈕高亮狀態)</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">function</span><span class="s1"> setLyricSize(sizeClass) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll(</span><span class="s9">'.lyric-body'</span><span class="s1">).forEach(el =&gt; {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>el.classList.remove(</span><span class="s9">'text-base'</span><span class="s1">, </span><span class="s9">'text-lg'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>el.classList.add(sizeClass);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">const</span><span class="s1"> btnNormal = document.getElementById(</span><span class="s9">'btn-size-normal'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">const</span><span class="s1"> btnLarge = document.getElementById(</span><span class="s9">'btn-size-large'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">if</span><span class="s1"> (sizeClass === </span><span class="s9">'text-lg'</span><span class="s1">) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>btnLarge.classList.add(</span><span class="s9">'bg-amber-300'</span><span class="s1">, </span><span class="s9">'text-stone-900'</span><span class="s1">, </span><span class="s9">'font-bold'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>btnLarge.classList.remove(</span><span class="s9">'bg-white/15'</span><span class="s1">, </span><span class="s9">'text-amber-100'</span><span class="s1">, </span><span class="s9">'font-medium'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>btnNormal.classList.remove(</span><span class="s9">'bg-amber-300'</span><span class="s1">, </span><span class="s9">'text-stone-900'</span><span class="s1">, </span><span class="s9">'font-bold'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>btnNormal.classList.add(</span><span class="s9">'bg-white/15'</span><span class="s1">, </span><span class="s9">'text-amber-100'</span><span class="s1">, </span><span class="s9">'font-medium'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>} </span><span class="s6">else</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>btnNormal.classList.add(</span><span class="s9">'bg-amber-300'</span><span class="s1">, </span><span class="s9">'text-stone-900'</span><span class="s1">, </span><span class="s9">'font-bold'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>btnNormal.classList.remove(</span><span class="s9">'bg-white/15'</span><span class="s1">, </span><span class="s9">'text-amber-100'</span><span class="s1">, </span><span class="s9">'font-medium'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>btnLarge.classList.remove(</span><span class="s9">'bg-amber-300'</span><span class="s1">, </span><span class="s9">'text-stone-900'</span><span class="s1">, </span><span class="s9">'font-bold'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>btnLarge.classList.add(</span><span class="s9">'bg-white/15'</span><span class="s1">, </span><span class="s9">'text-amber-100'</span><span class="s1">, </span><span class="s9">'font-medium'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 背景動態手繪小塗鴉 (漂浮小星星、愛心、閃電、金探子微光)</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">const</span><span class="s1"> canvas = document.getElementById(</span><span class="s9">'magic-canvas'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">const</span><span class="s1"> ctx = canvas.getContext(</span><span class="s9">'2d'</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">let</span><span class="s1"> doodles = [];</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">function</span><span class="s1"> resizeCanvas() {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>canvas.width = window.innerWidth;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>canvas.height = window.innerHeight;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>window.addEventListener(</span><span class="s9">'resize'</span><span class="s1">, resizeCanvas);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>resizeCanvas();</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p11"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s6">class</span><span class="s5"> </span><span class="s1">FloatingDoodle</span><span class="s5"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">constructor</span><span class="s1">() {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.reset(</span><span class="s6">true</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>reset(initial = </span><span class="s6">false</span><span class="s1">) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.x = </span><span class="s12">Math</span><span class="s1">.random() * canvas.width;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.y = initial ? </span><span class="s12">Math</span><span class="s1">.random() * canvas.height : canvas.height + </span><span class="s10">20</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.size = </span><span class="s12">Math</span><span class="s1">.random() * </span><span class="s10">6</span><span class="s1"> + </span><span class="s10">6.5</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.speedY = -(</span><span class="s12">Math</span><span class="s1">.random() * </span><span class="s10">0.4</span><span class="s1"> + </span><span class="s10">0.18</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.swaySpeed = </span><span class="s12">Math</span><span class="s1">.random() * </span><span class="s10">0.018</span><span class="s1"> + </span><span class="s10">0.008</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.phase = </span><span class="s12">Math</span><span class="s1">.random() * </span><span class="s12">Math</span><span class="s1">.</span><span class="s12">PI</span><span class="s1"> * </span><span class="s10">2</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.alpha = </span><span class="s12">Math</span><span class="s1">.random() * </span><span class="s10">0.35</span><span class="s1"> + </span><span class="s10">0.35</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">const</span><span class="s1"> types = [</span><span class="s9">'star'</span><span class="s1">, </span><span class="s9">'heart'</span><span class="s1">, </span><span class="s9">'bolt'</span><span class="s1">, </span><span class="s9">'dot'</span><span class="s1">];</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.type = types[</span><span class="s12">Math</span><span class="s1">.floor(</span><span class="s12">Math</span><span class="s1">.random() * types.length)];</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.color = </span><span class="s12">Math</span><span class="s1">.random() &gt; </span><span class="s10">0.35</span><span class="s1"> ? </span><span class="s9">'#fde08d'</span><span class="s1"> : </span><span class="s9">'#f4a28c'</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>update() {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.y += </span><span class="s6">this</span><span class="s1">.speedY;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.x += </span><span class="s12">Math</span><span class="s1">.sin(</span><span class="s6">this</span><span class="s1">.phase) * </span><span class="s10">0.3</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">this</span><span class="s1">.phase += </span><span class="s6">this</span><span class="s1">.swaySpeed;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">if</span><span class="s1"> (</span><span class="s6">this</span><span class="s1">.y &lt; -</span><span class="s10">25</span><span class="s1">) </span><span class="s6">this</span><span class="s1">.reset();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>draw() {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.save();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.translate(</span><span class="s6">this</span><span class="s1">.x, </span><span class="s6">this</span><span class="s1">.y);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.rotate(</span><span class="s12">Math</span><span class="s1">.sin(</span><span class="s6">this</span><span class="s1">.phase) * </span><span class="s10">0.25</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.globalAlpha = </span><span class="s6">this</span><span class="s1">.alpha;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.strokeStyle = </span><span class="s6">this</span><span class="s1">.color;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.fillStyle = </span><span class="s6">this</span><span class="s1">.color;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.lineWidth = </span><span class="s10">1.6</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.lineCap = </span><span class="s9">'round'</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.lineJoin = </span><span class="s9">'round'</span><span class="s1">;</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">const</span><span class="s1"> s = </span><span class="s6">this</span><span class="s1">.size;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s6">if</span><span class="s1"> (</span><span class="s6">this</span><span class="s1">.type === </span><span class="s9">'star'</span><span class="s1">) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.beginPath();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.moveTo(</span><span class="s10">0</span><span class="s1">, -s);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.quadraticCurveTo(</span><span class="s10">0</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, s, </span><span class="s10">0</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.quadraticCurveTo(</span><span class="s10">0</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, s);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.quadraticCurveTo(</span><span class="s10">0</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, -s, </span><span class="s10">0</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.quadraticCurveTo(</span><span class="s10">0</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, -s);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.stroke();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} </span><span class="s6">else</span><span class="s1"> </span><span class="s6">if</span><span class="s1"> (</span><span class="s6">this</span><span class="s1">.type === </span><span class="s9">'heart'</span><span class="s1">) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.beginPath();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.moveTo(</span><span class="s10">0</span><span class="s1">, s * </span><span class="s10">0.3</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.bezierCurveTo(-s * </span><span class="s10">0.6</span><span class="s1">, -s * </span><span class="s10">0.4</span><span class="s1">, -s * </span><span class="s10">1.1</span><span class="s1">, s * </span><span class="s10">0.2</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, s * </span><span class="s10">0.9</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.bezierCurveTo(s * </span><span class="s10">1.1</span><span class="s1">, s * </span><span class="s10">0.2</span><span class="s1">, s * </span><span class="s10">0.6</span><span class="s1">, -s * </span><span class="s10">0.4</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, s * </span><span class="s10">0.3</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.stroke();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} </span><span class="s6">else</span><span class="s1"> </span><span class="s6">if</span><span class="s1"> (</span><span class="s6">this</span><span class="s1">.type === </span><span class="s9">'bolt'</span><span class="s1">) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.beginPath();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.moveTo(s * </span><span class="s10">0.2</span><span class="s1">, -s * </span><span class="s10">0.7</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.lineTo(-s * </span><span class="s10">0.3</span><span class="s1">, </span><span class="s10">0</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.lineTo(s * </span><span class="s10">0.2</span><span class="s1">, </span><span class="s10">0</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.lineTo(-s * </span><span class="s10">0.2</span><span class="s1">, s * </span><span class="s10">0.7</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.stroke();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} </span><span class="s6">else</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.beginPath();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.arc(</span><span class="s10">0</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, s * </span><span class="s10">0.3</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, </span><span class="s12">Math</span><span class="s1">.</span><span class="s12">PI</span><span class="s1"> * </span><span class="s10">2</span><span class="s1">);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>ctx.fill();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.restore();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">let</span><span class="s1"> animationStarted = </span><span class="s6">false</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">function</span><span class="s1"> startMagicBackground() {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">if</span><span class="s1"> (animationStarted) </span><span class="s6">return</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>animationStarted = </span><span class="s6">true</span><span class="s1">;</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>resizeCanvas();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">const</span><span class="s1"> count = </span><span class="s12">Math</span><span class="s1">.max(</span><span class="s10">22</span><span class="s1">, </span><span class="s12">Math</span><span class="s1">.min(</span><span class="s10">35</span><span class="s1">, </span><span class="s12">Math</span><span class="s1">.floor(window.innerWidth / </span><span class="s10">12</span><span class="s1">)));</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>doodles = </span><span class="s12">Array</span><span class="s1">.</span><span class="s6">from</span><span class="s1">({ length: count }, () =&gt; </span><span class="s6">new</span><span class="s1"> </span><span class="s12">FloatingDoodle</span><span class="s1">());</span></p>
-<p class="p7"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">function</span><span class="s1"> animateDoodles() {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>ctx.clearRect(</span><span class="s10">0</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, canvas.width, canvas.height);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>doodles.forEach(d =&gt; {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>d.update();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>d.draw();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>requestAnimationFrame(animateDoodles);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>animateDoodles();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">if</span><span class="s1"> (document.readyState === </span><span class="s9">'loading'</span><span class="s1">) {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.addEventListener(</span><span class="s9">'DOMContentLoaded'</span><span class="s1">, startMagicBackground);</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>} </span><span class="s6">else</span><span class="s1"> {</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>startMagicBackground();</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>window.addEventListener(</span><span class="s9">'load'</span><span class="s1">, startMagicBackground);</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+<body class="min-h-screen flex flex-col items-center relative selection:bg-amber-300/40">
+
+    <!-- 背景動態手繪小塗鴉與星光 Canvas -->
+    <canvas id="magic-canvas"></canvas>
+
+    <!-- 分享成功提示 Toast -->
+    <div id="share-toast" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-amber-300 text-stone-900 border-2 border-stone-900 shadow-lg text-xs font-bold tracking-wider opacity-0 pointer-events-none transition-opacity duration-300">
+        已複製網址，可直接貼上分享給親友
+    </div>
+
+    <!-- 手機優先主容器 -->
+    <div class="w-full max-w-md min-h-screen flex flex-col relative z-10 pb-28">
+
+        <!-- 頂部標頭 -->
+        <header class="pt-7 pb-5 px-4 text-center relative">
+            <!-- 手繪風魔法小插畫 (金探子翅膀 + 十字架 + 閃電星芒) -->
+            <div class="mx-auto w-24 h-16 mb-2 animate-doodle flex items-center justify-center">
+                <svg viewBox="0 0 160 110" class="w-full h-full overflow-visible">
+                    <path d="M58 55 C35 35, 10 38, 8 48 C22 50, 35 53, 45 58 C28 58, 16 62, 14 68 C28 68, 42 66, 56 64" 
+                          fill="#fff8e7" stroke="#f5c45e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M102 55 C125 35, 150 38, 152 48 C138 50, 125 53, 115 58 C132 58, 144 62, 146 68 C132 68, 118 66, 104 64" 
+                          fill="#fff8e7" stroke="#f5c45e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="80" cy="60" r="22" fill="#f5c45e" stroke="#26211d" stroke-width="2.2"/>
+                    <path d="M80 46 L80 73 M70 55 L90 55" stroke="#26211d" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M82 14 L75 25 L83 25 L77 35" fill="none" stroke="#fde08d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M44 26 L46 31 L51 33 L46 35 L44 40 L42 35 L37 33 L42 31 Z" fill="#fde08d"/>
+                    <path d="M118 22 L119.5 26 L123.5 27.5 L119.5 29 L118 33 L116.5 29 L112.5 27.5 L116.5 26 Z" fill="#fde08d"/>
+                </svg>
+            </div>
+            <p class="font-en-formal text-xs text-amber-300/90 tracking-[0.22em] uppercase mb-1">
+                Wedding Ceremony
+            </p>
+            <p class="font-en-formal text-sm font-semibold text-amber-200 tracking-[0.25em] mb-2">
+                2027.01.02
+            </p>
+            <h1 class="font-serif-formal text-3xl font-bold tracking-[0.12em] text-[#fff9eb] mb-3">
+                榮祥 <span class="font-en-formal text-amber-300 font-normal mx-1">&amp;</span> 奕晏
+            </h1>
+            <div class="flex items-center justify-center gap-2">
+                <div class="inline-block px-4 py-1 rounded-full bg-white/10 border border-amber-300/35 text-amber-100 text-xs font-medium tracking-[0.18em]">
+                    結婚典禮流程
+                </div>
+                <button onclick="shareProgram()" class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-300/90 hover:bg-amber-300 text-stone-900 border border-stone-900 text-xs font-bold tracking-wider shadow-[1.5px_1.5px_0px_#000] active:translate-y-0.5 transition">
+                    <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
+                    <span>分享此流程單</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- 內容主區塊 -->
+        <main class="px-4 flex-1">
+
+            <!-- 分頁 1：典禮流程 -->
+            <section id="tab-program" class="tab-panel space-y-5">
+
+                <!-- 雙方主婚人卡片 (置頂呈現) -->
+                <div class="doodle-card p-4 pt-5">
+                    <div class="washi-tape"></div>
+                    <div class="text-center mb-3">
+                        <span class="font-serif-formal text-xs font-bold text-stone-700 tracking-[0.15em]">
+                            雙方主婚人
+                        </span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2.5 text-center">
+                        <div class="bg-white/85 border border-stone-800/20 rounded-xl p-3">
+                            <span class="text-xs font-medium text-[#a63737] block mb-1">男方主婚人</span>
+                            <p class="font-serif-formal font-bold text-stone-900 text-base tracking-wider">王佩玲</p>
+                        </div>
+                        <div class="bg-white/85 border border-stone-800/20 rounded-xl p-3">
+                            <span class="text-xs font-medium text-[#35637d] block mb-1">女方主婚人</span>
+                            <p class="font-serif-formal font-bold text-stone-900 text-base tracking-wider">陳哲榮 &nbsp;張秀珠</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 婚禮流程表 -->
+                <div class="doodle-card p-5">
+                    <div class="text-center doodle-divider pb-3.5 mb-5">
+                        <span class="font-en-formal text-xs text-amber-800 tracking-[0.2em] uppercase block mb-0.5">Order of Service</span>
+                        <h2 class="font-serif-formal text-lg font-bold text-stone-900 tracking-[0.1em]">結婚典禮流程</h2>
+                    </div>
+
+                    <!-- 手繪虛線時間軸 -->
+                    <div class="relative pl-5 border-l-2 border-dashed border-stone-800/30 space-y-5">
+                        
+                        <!-- 1 -->
+                        <div class="relative">
+                            <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-stone-800"></span>
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="font-serif-formal font-bold text-base text-stone-900 tracking-wide">宣召 &amp; 序樂 &amp; 進場</h3>
+                                <span class="text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0">詹文仁 牧師</span>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="relative">
+                            <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-[#a63737] border-2 border-stone-800"></span>
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="font-serif-formal font-bold text-base text-stone-900 tracking-wide">敬拜</h3>
+                                <span class="text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0">全體賓客</span>
+                            </div>
+                            <button onclick="switchTab('hymns')" 
+                                class="mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-white bg-[#a63737] border border-stone-800 shadow-[1.5px_1.5px_0px_#26211d] active:translate-y-0.5 px-3 py-1.5 rounded-full transition">
+                                <i data-lucide="music" class="w-3.5 h-3.5"></i>
+                                <span>查看詩歌歌詞</span>
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="relative">
+                            <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-stone-800"></span>
+                            <div class="flex justify-between items-start gap-2">
+                                <h3 class="font-serif-formal font-bold text-base text-stone-900 tracking-wide shrink-0">讀經</h3>
+                                <span class="text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full text-right">謝秉諺 姚柔伊傳道夫婦</span>
+                            </div>
+                            <button onclick="switchTab('scripture')" 
+                                class="mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-stone-900 bg-amber-300 border border-stone-800 shadow-[1.5px_1.5px_0px_#26211d] active:translate-y-0.5 px-3 py-1.5 rounded-full transition">
+                                <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+                                <span>查看今日經文</span>
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="relative">
+                            <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-stone-800"></span>
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="font-serif-formal font-bold text-base text-stone-900 tracking-wide">牧者勉勵</h3>
+                                <span class="text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0">黃國康 牧師</span>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="relative">
+                            <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-[#a63737] border-2 border-stone-800"></span>
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="font-serif-formal font-bold text-base text-stone-900 tracking-wide">證婚 &amp; 誓約</h3>
+                                <span class="text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0">詹文仁 牧師</span>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="relative">
+                            <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 border-2 border-stone-800"></span>
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="font-serif-formal font-bold text-base text-stone-900 tracking-wide">謝親恩</h3>
+                                <span class="text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0">新人</span>
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="relative">
+                            <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-[#35637d] border-2 border-stone-800"></span>
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="font-serif-formal font-bold text-base text-stone-900 tracking-wide">祝禱</h3>
+                                <span class="text-xs font-medium text-stone-800 bg-amber-200/75 border border-stone-800/20 px-2.5 py-0.5 rounded-full shrink-0">詹文仁 牧師</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 祝禱下方合影提醒 -->
+                    <div class="mt-6 pt-4 border-t border-dashed border-stone-800/25 text-center">
+                        <p class="font-serif-formal text-sm font-semibold text-stone-800 tracking-wide">
+                            典禮結束後，敬請留步於會場與新人合影
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 分頁 2：詩歌歌詞 -->
+            <section id="tab-hymns" class="tab-panel hidden space-y-5">
+                
+                <!-- 頂部返回主畫面與字級切換列 -->
+                <div class="flex items-center justify-between gap-2 bg-white/10 border border-amber-300/35 rounded-2xl px-3.5 py-2.5">
+                    <button onclick="switchTab('program')"
+                        class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-200 hover:text-amber-100 active:scale-95 transition py-1 px-2 rounded-xl bg-white/10">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                        <span>返回典禮流程</span>
+                    </button>
+
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[11px] text-amber-100/75 mr-1">字級</span>
+                        <button id="btn-size-normal" onclick="setLyricSize('text-base')"
+                            class="px-2.5 py-1 rounded-xl text-xs bg-amber-300 text-stone-900 font-bold transition">
+                            標準
+                        </button>
+                        <button id="btn-size-large" onclick="setLyricSize('text-lg')"
+                            class="px-2.5 py-1 rounded-xl text-xs bg-white/15 text-amber-100 font-medium transition">
+                            放大
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 詩歌一：唯一的力量 -->
+                <div class="doodle-card p-5 pt-6">
+                    <div class="washi-tape"></div>
+                    <div class="text-center doodle-divider pb-3 mb-4">
+                        <span class="text-xs font-medium text-[#a63737] tracking-widest block mb-1">敬拜詩歌 I</span>
+                        <h2 class="font-serif-formal text-xl font-bold text-stone-900 tracking-wider">唯一的力量</h2>
+                    </div>
+                    <div class="lyric-body text-base text-stone-800 leading-relaxed space-y-4 text-center font-medium">
+                        <p>
+                            唯一的力量 唯一的信仰<br>
+                            堅定自己的方向<br>
+                            也是會哭 也是會沮喪<br>
+                            但是從不放棄有愛的地方
+                        </p>
+                        <p>
+                            就是那股想愛的衝動<br>
+                            深陷下去 無法自拔<br>
+                            滿是愛的教會<br>
+                            就是我的家
+                        </p>
+                        <p>
+                            因為我知道<br>
+                            我總是不孤單<br>
+                            我有甜蜜 有溫暖的家<br>
+                            勇敢去追求<br>
+                            就不怕失去什麼<br>
+                            仔細聆聽 從天降下的感動<br>
+                            一生的執著 耶穌愛我
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 詩歌二：祢使我勇敢 -->
+                <div class="doodle-card p-5 pt-6">
+                    <div class="washi-tape"></div>
+                    <div class="text-center doodle-divider pb-3 mb-4">
+                        <span class="text-xs font-medium text-[#35637d] tracking-widest block mb-1">敬拜詩歌 II</span>
+                        <h2 class="font-serif-formal text-xl font-bold text-stone-900 tracking-wider">祢使我勇敢</h2>
+                    </div>
+                    <div class="lyric-body text-base text-stone-800 leading-relaxed space-y-4 text-center font-medium">
+                        <p>
+                            沒有懲罰 沒有重擔<br>
+                            因我活在祢愛裡<br>
+                            可以坦然面對自己<br>
+                            我的恐懼 我的軟弱<br>
+                            全都交在祢手中<br>
+                            I am not alone
+                        </p>
+                        <p>
+                            祢會為我撐傘 是我的安全感<br>
+                            輕看一切困難 盼望未來<br>
+                            自由踏出步伐 釋放我的情感<br>
+                            祢使我勇敢
+                        </p>
+                        <p>
+                            不再為明天憂慮<br>
+                            將與美好事相遇<br>
+                            萬事(都)互相效力<br>
+                            我已(經)得著能力
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 底部返回主畫面按鈕 (方便唱完詩歌直接回到流程) -->
+                <div class="pt-1 pb-2 text-center">
+                    <button onclick="switchTab('program')"
+                        class="w-full py-3 rounded-2xl bg-amber-300 text-stone-900 border-2 border-stone-900 shadow-[3px_3px_0px_rgba(223,168,68,0.45)] font-serif-formal font-bold text-sm tracking-wider inline-flex items-center justify-center gap-2 active:translate-y-0.5 transition">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                        <span>返回結婚典禮流程</span>
+                    </button>
+                </div>
+
+            </section>
+
+            <!-- 分頁 3：今日經文 -->
+            <section id="tab-scripture" class="tab-panel hidden space-y-4">
+                <div class="flex items-center justify-start">
+                    <button onclick="switchTab('program')"
+                        class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-200 hover:text-amber-100 active:scale-95 transition py-2 px-3.5 rounded-2xl bg-white/10 border border-amber-300/35">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                        <span>返回典禮流程</span>
+                    </button>
+                </div>
+
+                <div class="doodle-card p-6 pt-7 text-center">
+                    <div class="washi-tape"></div>
+                    <div class="doodle-divider pb-3.5 mb-5">
+                        <span class="font-en-formal text-xs text-amber-800 tracking-[0.2em] uppercase block mb-0.5">Scripture Reading</span>
+                        <h2 class="font-serif-formal text-lg font-bold text-stone-900 tracking-[0.1em]">今日經文</h2>
+                        <p class="text-xs text-stone-600 mt-1">讀經：謝秉諺 姚柔伊傳道夫婦</p>
+                    </div>
+                    <div class="py-8 px-4 rounded-xl bg-white/75 border border-dashed border-stone-800/25">
+                        <p class="font-serif-formal text-base text-stone-700 tracking-wider">
+                            經文章節敬請期待
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 分頁 4：合影順序 -->
+            <section id="tab-photos" class="tab-panel hidden space-y-4">
+                <div class="doodle-card p-5">
+                    <div class="text-center doodle-divider pb-3.5 mb-4">
+                        <span class="font-en-formal text-xs text-amber-800 tracking-[0.2em] uppercase block mb-0.5">Group Photos</span>
+                        <h2 class="font-serif-formal text-lg font-bold text-stone-900 tracking-[0.1em]">合影順序</h2>
+                    </div>
+
+                    <ol class="space-y-2.5" id="photo-list">
+                        <!-- 由 JS 渲染 12 組名單 -->
+                    </ol>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 底部固定導覽列 (一直顯示在手機下方，方便單手切換頁面) -->
+        <nav class="fixed bottom-0 left-0 right-0 z-30 flex justify-center px-3 pt-2 safe-bottom bg-gradient-to-t from-[#111827] via-[#182238]/95 to-transparent">
+            <div class="w-full max-w-md bg-[#222f4b]/95 backdrop-blur-md border border-amber-300/45 rounded-2xl p-1.5 shadow-[0_8px_25px_rgba(0,0,0,0.65)] grid grid-cols-4 gap-1">
+                
+                <button onclick="switchTab('program')" data-tab="program"
+                    class="nav-btn active flex flex-col items-center justify-center py-2 px-1 rounded-xl text-stone-900 bg-amber-300 border border-stone-900 font-bold transition">
+                    <i data-lucide="scroll" class="w-4 h-4 mb-1"></i>
+                    <span class="text-xs tracking-wider">典禮流程</span>
+                </button>
+
+                <button onclick="switchTab('hymns')" data-tab="hymns"
+                    class="nav-btn flex flex-col items-center justify-center py-2 px-1 rounded-xl text-amber-100/80 hover:text-amber-200 border border-transparent font-medium transition">
+                    <i data-lucide="music" class="w-4 h-4 mb-1"></i>
+                    <span class="text-xs tracking-wider">詩歌歌詞</span>
+                </button>
+
+                <button onclick="switchTab('scripture')" data-tab="scripture"
+                    class="nav-btn flex flex-col items-center justify-center py-2 px-1 rounded-xl text-amber-100/80 hover:text-amber-200 border border-transparent font-medium transition">
+                    <i data-lucide="book-open" class="w-4 h-4 mb-1"></i>
+                    <span class="text-xs tracking-wider">今日經文</span>
+                </button>
+
+                <button onclick="switchTab('photos')" data-tab="photos"
+                    class="nav-btn flex flex-col items-center justify-center py-2 px-1 rounded-xl text-amber-100/80 hover:text-amber-200 border border-transparent font-medium transition">
+                    <i data-lucide="camera" class="w-4 h-4 mb-1"></i>
+                    <span class="text-xs tracking-wider">合影順序</span>
+                </button>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <script>
+        // 初始化 Lucide 圖示
+        lucide.createIcons();
+
+        // 分享流程單功能 (優先喚起手機原生分享選單，若不支援則自動複製網址並顯示提示)
+        function shareProgram() {
+            const shareData = {
+                title: '榮祥 & 奕晏 — 結婚典禮流程 (2027.01.02)',
+                text: '誠摯邀請您參與榮祥 & 奕晏的結婚典禮，點擊查看當日典禮流程、詩歌與合影順序：',
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                navigator.share(shareData).catch(() => {});
+            } else {
+                const tempInput = document.createElement('input');
+                tempInput.value = window.location.href;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+
+                const toast = document.getElementById('share-toast');
+                toast.classList.remove('opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('opacity-0');
+                }, 2600);
+            }
+        }
+
+        // 合影順序資料
+        const photoGroups = [
+            "雙方主婚人、牧長",
+            "婚禮 & 家宴工作人員",
+            "榮祥家人",
+            "奕晏家人",
+            "奕晏國高中同學",
+            "奕晏大學同學",
+            "奕晏前同事 (統一獅、沐恩牙醫)",
+            "榮祥奕晏的學青團契",
+            "榮祥奕晏過去帶的學生與同工",
+            "真理堂弟兄姊妹",
+            "信義會弟兄姊妹",
+            "各方好友"
+        ];
+
+        // 霍格華茲四學院配色（葛來分多紅、雷文克勞藍、赫夫帕夫黃、史萊哲林綠）
+        const houseColors = [
+            { bg: '#a63737', text: '#fff9eb' }, // 紅
+            { bg: '#35637d', text: '#fff9eb' }, // 藍
+            { bg: '#e5a93c', text: '#26211d' }, // 黃（搭配深色字更清晰）
+            { bg: '#386641', text: '#fff9eb' }  // 綠
+        ];
+
+        // 渲染合影順序列表
+        const photoListEl = document.getElementById('photo-list');
+        photoGroups.forEach((group, idx) => {
+            const num = idx + 1;
+            const color = houseColors[idx % houseColors.length];
+            const li = document.createElement('li');
+            li.className = "flex items-center gap-3 p-3 rounded-xl bg-white/85 border border-stone-800/15";
+            li.innerHTML = `
+                <span style="background-color: ${color.bg}; color: ${color.text};" class="w-7 h-7 doodle-badge font-en-formal font-bold text-xs flex items-center justify-center shrink-0">
+                    ${num}
+                </span>
+                <span class="font-medium text-stone-900 text-sm sm:text-base leading-snug">${group}</span>
+            `;
+            photoListEl.appendChild(li);
+        });
+
+        // 分頁切換邏輯
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.add('hidden');
+            });
+            const target = document.getElementById(`tab-${tabId}`);
+            if (target) {
+                target.classList.remove('hidden');
+            }
+
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                if (btn.dataset.tab === tabId) {
+                    btn.classList.add('text-stone-900', 'bg-amber-300', 'border-stone-900', 'font-bold');
+                    btn.classList.remove('text-amber-100/80', 'border-transparent', 'font-medium');
+                } else {
+                    btn.classList.remove('text-stone-900', 'bg-amber-300', 'border-stone-900', 'font-bold');
+                    btn.classList.add('text-amber-100/80', 'border-transparent', 'font-medium');
+                }
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // 歌詞字體大小調整 (含按鈕高亮狀態)
+        function setLyricSize(sizeClass) {
+            document.querySelectorAll('.lyric-body').forEach(el => {
+                el.classList.remove('text-base', 'text-lg');
+                el.classList.add(sizeClass);
+            });
+
+            const btnNormal = document.getElementById('btn-size-normal');
+            const btnLarge = document.getElementById('btn-size-large');
+            if (sizeClass === 'text-lg') {
+                btnLarge.classList.add('bg-amber-300', 'text-stone-900', 'font-bold');
+                btnLarge.classList.remove('bg-white/15', 'text-amber-100', 'font-medium');
+                btnNormal.classList.remove('bg-amber-300', 'text-stone-900', 'font-bold');
+                btnNormal.classList.add('bg-white/15', 'text-amber-100', 'font-medium');
+            } else {
+                btnNormal.classList.add('bg-amber-300', 'text-stone-900', 'font-bold');
+                btnNormal.classList.remove('bg-white/15', 'text-amber-100', 'font-medium');
+                btnLarge.classList.remove('bg-amber-300', 'text-stone-900', 'font-bold');
+                btnLarge.classList.add('bg-white/15', 'text-amber-100', 'font-medium');
+            }
+        }
+
+        // 背景動態手繪小塗鴉 (漂浮小星星、愛心、閃電、金探子微光)
+        const canvas = document.getElementById('magic-canvas');
+        const ctx = canvas.getContext('2d');
+        let doodles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class FloatingDoodle {
+            constructor() {
+                this.reset(true);
+            }
+            reset(initial = false) {
+                this.x = Math.random() * canvas.width;
+                this.y = initial ? Math.random() * canvas.height : canvas.height + 20;
+                this.size = Math.random() * 6 + 6.5;
+                this.speedY = -(Math.random() * 0.4 + 0.18);
+                this.swaySpeed = Math.random() * 0.018 + 0.008;
+                this.phase = Math.random() * Math.PI * 2;
+                this.alpha = Math.random() * 0.35 + 0.35;
+                const types = ['star', 'heart', 'bolt', 'dot'];
+                this.type = types[Math.floor(Math.random() * types.length)];
+                this.color = Math.random() > 0.35 ? '#fde08d' : '#f4a28c';
+            }
+            update() {
+                this.y += this.speedY;
+                this.x += Math.sin(this.phase) * 0.3;
+                this.phase += this.swaySpeed;
+                if (this.y < -25) this.reset();
+            }
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(Math.sin(this.phase) * 0.25);
+                ctx.globalAlpha = this.alpha;
+                ctx.strokeStyle = this.color;
+                ctx.fillStyle = this.color;
+                ctx.lineWidth = 1.6;
+                ctx.lineCap = 'round';
+                ctx.lineJoin = 'round';
+
+                const s = this.size;
+                if (this.type === 'star') {
+                    ctx.beginPath();
+                    ctx.moveTo(0, -s);
+                    ctx.quadraticCurveTo(0, 0, s, 0);
+                    ctx.quadraticCurveTo(0, 0, 0, s);
+                    ctx.quadraticCurveTo(0, 0, -s, 0);
+                    ctx.quadraticCurveTo(0, 0, 0, -s);
+                    ctx.stroke();
+                } else if (this.type === 'heart') {
+                    ctx.beginPath();
+                    ctx.moveTo(0, s * 0.3);
+                    ctx.bezierCurveTo(-s * 0.6, -s * 0.4, -s * 1.1, s * 0.2, 0, s * 0.9);
+                    ctx.bezierCurveTo(s * 1.1, s * 0.2, s * 0.6, -s * 0.4, 0, s * 0.3);
+                    ctx.stroke();
+                } else if (this.type === 'bolt') {
+                    ctx.beginPath();
+                    ctx.moveTo(s * 0.2, -s * 0.7);
+                    ctx.lineTo(-s * 0.3, 0);
+                    ctx.lineTo(s * 0.2, 0);
+                    ctx.lineTo(-s * 0.2, s * 0.7);
+                    ctx.stroke();
+                } else {
+                    ctx.beginPath();
+                    ctx.arc(0, 0, s * 0.3, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                ctx.restore();
+            }
+        }
+
+        let animationStarted = false;
+        function startMagicBackground() {
+            if (animationStarted) return;
+            animationStarted = true;
+            resizeCanvas();
+            const count = Math.max(22, Math.min(35, Math.floor(window.innerWidth / 12)));
+            doodles = Array.from({ length: count }, () => new FloatingDoodle());
+            
+            function animateDoodles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                doodles.forEach(d => {
+                    d.update();
+                    d.draw();
+                });
+                requestAnimationFrame(animateDoodles);
+            }
+            animateDoodles();
+        }
+
+        // 確保在各種預覽與載入情境下都能立即啟動動態背景
+        startMagicBackground();
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', startMagicBackground);
+        }
+        window.addEventListener('load', startMagicBackground);
+    </script>
 </body>
 </html>
