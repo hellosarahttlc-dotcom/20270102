@@ -399,7 +399,7 @@
                 </div>
                 <button onclick="shareProgram()" class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-300/90 hover:bg-amber-300 text-stone-900 border border-stone-900 text-xs font-bold tracking-wider shadow-[1.5px_1.5px_0px_#000] active:translate-y-0.5 transition">
                     <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
-                    <span>分享此流程單</span>
+                    <span>分享流程單</span>
                 </button>
             </div>
         </header>
@@ -758,6 +758,13 @@
         </nav>
 
     </div>
+
+    <script>
+        // 初始化 Lucide 圖示
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+
         // 分享流程單功能 (優先喚起手機原生分享選單，若不支援則自動複製指定文案與網址並顯示提示)
         function shareProgram() {
             const targetUrl = 'https://hellosarahttlc-dotcom.github.io/20270102/';
