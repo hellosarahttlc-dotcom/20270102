@@ -31,7 +31,7 @@
         }
 
         body {
-            /* 採用筆畫清晰、正式優雅的思源黑體與思源宋體，解決「禱」字跑掉與粗體沾黏問題 */
+            /* 採用筆畫清晰、正式優雅的思源黑體與思源宋體 */
             font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--night-sky);
             background-image: 
@@ -53,7 +53,7 @@
             font-family: 'Cinzel', Georgia, serif;
         }
 
-        /* 保留微手繪感的溫潤羊皮紙卡片，但線條更精緻俐落 */
+        /* 保留微手繪感的溫潤羊皮紙卡片 */
         .doodle-card {
             background-color: var(--warm-cream);
             background-image: radial-gradient(#e5d7be 0.65px, transparent 0.65px);
@@ -213,9 +213,8 @@
 </head>
 <body class="min-h-[100dvh] flex flex-col items-center relative selection:bg-amber-300/40">
 
-    <!-- 魔法城堡與漂浮雲海全版背景圖層 (純粹的城堡與雲海，手機與電腦皆完整居中呈現) -->
+    <!-- 魔法城堡與漂浮雲海全版背景圖層 -->
     <div id="castle-backdrop" aria-hidden="true">
-        <!-- 精緻童趣手繪風霍格華茲魔法城堡與雲海插畫背景 -->
         <svg class="bg-castle-scene" viewBox="0 0 800 560" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <linearGradient id="castleBackGrad" x1="400" y1="80" x2="400" y2="500" gradientUnits="userSpaceOnUse">
@@ -243,29 +242,21 @@
                 </radialGradient>
             </defs>
 
-            <!-- 城堡後方柔和月暈光環 -->
             <circle cx="400" cy="210" r="240" fill="url(#moonHalo)"/>
 
-            <!-- 遠山與懸崖層次輪廓 -->
             <path d="M0 445 Q130 375 250 405 T530 390 T800 435 L800 560 L0 560 Z" fill="#1b1822"/>
             <path d="M120 430 Q260 350 400 375 T680 420 L680 560 L120 560 Z" fill="#221e2b"/>
 
-            <!-- 遠景側翼小塔樓與石拱橋 (增加城堡空間深度) -->
             <g stroke="#dfa844" stroke-width="1.2" stroke-opacity="0.55" fill="url(#castleBackGrad)">
-                <!-- 左側懸崖小哨塔 -->
                 <rect x="135" y="295" width="32" height="125" rx="2"/>
                 <polygon points="131,295 151,238 171,295"/>
-                <!-- 連接石拱橋 -->
                 <path d="M167 340 L215 340 L215 368 Q203 352 191 368 Q179 352 167 368 Z"/>
-                <!-- 右側貓頭鷹棚屋與小塔 -->
                 <rect x="628" y="305" width="34" height="115" rx="2"/>
                 <polygon points="624,305 645,248 666,305"/>
                 <path d="M582 348 L628 348 L628 374 Q616 359 605 374 Q593 359 582 374 Z"/>
             </g>
 
-            <!-- 魔法城堡主體建築群與手繪金邊勾勒 -->
             <g stroke="#dfa844" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="url(#castleGrad)">
-                <!-- 左側鐘樓與雙尖塔 -->
                 <rect x="182" y="248" width="44" height="175" rx="2"/>
                 <polygon points="176,248 204,172 232,248" fill="url(#roofGrad)"/>
                 <line x1="204" y1="154" x2="204" y2="172"/>
@@ -274,78 +265,62 @@
                 <rect x="234" y="205" width="54" height="218" rx="2"/>
                 <polygon points="228,205 261,122 294,205" fill="url(#roofGrad)"/>
                 <line x1="261" y1="102" x2="261" y2="122"/>
-                <!-- 塔樓城垛裝飾 -->
                 <path d="M234 205 L234 198 L242 198 L242 205 L252 205 L252 198 L260 198 L260 205 L270 205 L270 198 L278 198 L278 205 L288 205"/>
 
-                <!-- 中央主殿與最高天文尖塔 -->
                 <rect x="298" y="178" width="124" height="245" rx="3"/>
                 <polygon points="292,178 360,64 428,178" fill="url(#roofGrad)"/>
                 <line x1="360" y1="38" x2="360" y2="64"/>
-                <!-- 最高塔小旗幟與星芒 -->
                 <path d="M360 40 L374 45 L360 50" fill="#fde08d"/>
                 <circle cx="360" cy="34" r="2.2" fill="#fde08d"/>
 
-                <!-- 主殿左右衛塔 -->
                 <rect x="284" y="205" width="24" height="215" rx="2"/>
                 <polygon points="280,205 296,148 312,205" fill="url(#roofGrad)"/>
                 <rect x="412" y="205" width="24" height="215" rx="2"/>
                 <polygon points="408,205 424,148 440,205" fill="url(#roofGrad)"/>
 
-                <!-- 右側大禮堂 (Great Hall) 階梯山牆與玫瑰窗 -->
                 <rect x="442" y="232" width="92" height="190" rx="2"/>
                 <polygon points="436,232 488,156 540,232" fill="url(#roofGrad)"/>
-                <!-- 大禮堂屋頂小尖塔 -->
                 <polygon points="481,162 488,132 495,162" fill="url(#roofGrad)"/>
-                <!-- 大禮堂圓形玫瑰花窗外框 -->
                 <circle cx="488" cy="212" r="14" fill="#262130" stroke="#dfa844" stroke-width="1.4"/>
 
-                <!-- 右側高聳天文塔 -->
                 <rect x="542" y="192" width="52" height="230" rx="2"/>
                 <polygon points="536,192 568,108 600,192" fill="url(#roofGrad)"/>
                 <line x1="568" y1="88" x2="568" y2="108"/>
                 <path d="M568 90 L580 94 L568 98" fill="#dfa844"/>
             </g>
 
-            <!-- 城堡暖黃微光窗戶與大禮堂長窗 -->
             <g fill="#fde08d" opacity="0.88">
-                <!-- 左塔窗 -->
                 <rect x="199" y="272" width="10" height="18" rx="5"/>
                 <rect x="199" y="308" width="10" height="18" rx="5"/>
                 <rect x="255" y="232" width="12" height="22" rx="6"/>
                 <rect x="255" y="272" width="12" height="22" rx="6"/>
                 <rect x="255" y="312" width="12" height="22" rx="6"/>
 
-                <!-- 主殿拱形窗群 -->
                 <rect x="330" y="212" width="14" height="26" rx="7"/>
                 <rect x="376" y="212" width="14" height="26" rx="7"/>
                 <rect x="330" y="258" width="14" height="26" rx="7"/>
                 <rect x="376" y="258" width="14" height="26" rx="7"/>
-                <!-- 中央大拱門暖光 -->
                 <rect x="351" y="308" width="18" height="34" rx="9"/>
 
-                <!-- 大禮堂玫瑰窗與三連長窗 -->
                 <circle cx="488" cy="212" r="9" fill="#fde08d" opacity="0.9"/>
                 <rect x="458" y="254" width="11" height="36" rx="5.5"/>
                 <rect x="482.5" y="254" width="11" height="36" rx="5.5"/>
                 <rect x="507" y="254" width="11" height="36" rx="5.5"/>
 
-                <!-- 天文塔窗 -->
                 <rect x="562" y="222" width="12" height="22" rx="6"/>
                 <rect x="562" y="262" width="12" height="22" rx="6"/>
                 <rect x="562" y="302" width="12" height="22" rx="6"/>
             </g>
 
-            <!-- 城堡山腳下繚繞的雙層夢幻雲海 (移除雲朵描邊，讓雲海更柔和自然) -->
             <path d="M-20 432 C35 390, 115 392, 165 424 C215 382, 300 382, 355 418 C410 378, 500 380, 550 420 C605 384, 690 388, 740 424 C775 404, 805 414, 820 432 L820 560 L-20 560 Z" 
                   fill="url(#cloudGrad)"/>
             <path d="M-20 462 C55 425, 145 430, 200 458 C265 420, 360 422, 420 455 C485 422, 575 425, 635 456 C695 428, 765 432, 820 458 L820 560 L-20 560 Z" 
                   fill="#23202a" fill-opacity="0.72"/>
         </svg>
 
-        <!-- 疊加一層柔和夜空漸層，確保手機與電腦上方的卡片與文字清晰好閱讀 -->
         <div class="absolute inset-0 bg-gradient-to-b from-[#23202a]/75 via-[#23202a]/25 to-[#1a1720]/65"></div>
 
-        <!-- 遠景漂浮動態雲朵 (拿掉描邊線條，呈現蓬鬆無框雲朵) -->
+        <!-- 遠景漂浮動態雲朵 -->
         <svg class="absolute top-14 left-[-6%] w-48 sm:w-64 h-24 sm:h-28 opacity-25 cloud-drift-1" viewBox="0 0 240 100" fill="none">
             <path d="M30 78 H195 C212 78 224 66 222 50 C220 35 206 26 191 29 C183 14 164 8 148 16 C136 6 116 7 105 19 C92 14 76 19 70 32 C53 29 36 39 33 55 C20 58 14 70 30 78 Z" fill="#f7ebd2"/>
         </svg>
@@ -370,7 +345,6 @@
 
         <!-- 頂部標頭 -->
         <header class="pt-7 pb-5 px-4 text-center relative">
-            <!-- 手繪風魔法小插畫 (金探子翅膀 + 十字架 + 閃電星芒) -->
             <div class="mx-auto w-24 h-16 mb-2 animate-doodle flex items-center justify-center">
                 <svg viewBox="0 0 160 110" class="w-full h-full overflow-visible">
                     <path d="M58 55 C35 35, 10 38, 8 48 C22 50, 35 53, 45 58 C28 58, 16 62, 14 68 C28 68, 42 66, 56 64" 
@@ -394,9 +368,10 @@
                 榮祥 <span class="font-en-formal text-amber-300 font-normal mx-1">&amp;</span> 奕晏
             </h1>
             <div class="flex items-center justify-center gap-2">
-                <div class="inline-block px-4 py-1 rounded-full bg-white/10 border border-amber-300/35 text-amber-100 text-xs font-medium tracking-[0.18em]">
+                <button onclick="switchTab('program')" title="回到典禮流程首頁"
+                    class="inline-block px-4 py-1 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 border border-amber-300/35 text-amber-100 text-xs font-medium tracking-[0.18em] transition cursor-pointer">
                     結婚典禮流程
-                </div>
+                </button>
                 <button onclick="shareProgram()" class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-300/90 hover:bg-amber-300 text-stone-900 border border-stone-900 text-xs font-bold tracking-wider shadow-[1.5px_1.5px_0px_#000] active:translate-y-0.5 transition">
                     <i data-lucide="share-2" class="w-3.5 h-3.5"></i>
                     <span>分享流程單</span>
@@ -410,7 +385,7 @@
             <!-- 分頁 1：典禮流程 -->
             <section id="tab-program" class="tab-panel space-y-5">
 
-                <!-- 主視覺圖片（放大新人比例，周圍以柔和暖金背光環繞並自然溶入背景城堡與雲海） -->
+                <!-- 主視覺圖片 -->
                 <div class="w-full hero-couple-wrap -mt-1 mb-1">
                     <div class="hero-couple-backlight" aria-hidden="true"></div>
                     <div class="w-full overflow-hidden hero-couple-mask">
@@ -528,11 +503,15 @@
 
                     </div>
 
-                    <!-- 祝禱下方合影提醒 -->
+                    <!-- 祝禱下方合影提醒 (點擊可直接前往合影順序頁面) -->
                     <div class="mt-6 pt-4 border-t border-dashed border-stone-800/25 text-center">
-                        <p class="font-serif-formal text-sm font-semibold text-stone-800 tracking-wide">
-                            典禮結束後，敬請留步於會場與新人合影
-                        </p>
+                        <button onclick="switchTab('photos')"
+                            class="w-full py-2.5 px-3 rounded-xl bg-amber-100/80 hover:bg-amber-200/85 active:scale-[0.99] border border-stone-800/20 transition inline-flex items-center justify-center gap-2 group cursor-pointer">
+                            <span class="font-serif-formal text-sm font-semibold text-stone-800 tracking-wide underline decoration-amber-700/50 underline-offset-4">
+                                典禮結束後，敬請留步於會場與新人合影
+                            </span>
+                            <i data-lucide="camera" class="w-4 h-4 text-[#a63737] shrink-0 group-hover:scale-110 transition-transform"></i>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -624,7 +603,7 @@
                     </div>
                 </div>
 
-                <!-- 底部返回主畫面按鈕 (方便唱完詩歌直接回到流程) -->
+                <!-- 底部返回主畫面按鈕 -->
                 <div class="pt-1 pb-2 text-center">
                     <button onclick="switchTab('program')"
                         class="w-full py-3 rounded-2xl bg-amber-300 text-stone-900 border-2 border-stone-900 shadow-[3px_3px_0px_rgba(223,168,68,0.45)] font-serif-formal font-bold text-sm tracking-wider inline-flex items-center justify-center gap-2 active:translate-y-0.5 transition">
@@ -635,7 +614,7 @@
 
             </section>
 
-            <!-- 分頁 3：今日經文 -->
+            <!-- 分頁 3：聖經經文 -->
             <section id="tab-scripture" class="tab-panel hidden space-y-5">
                 <!-- 頂部返回與字級切換列 -->
                 <div class="flex items-center justify-between gap-2 bg-white/10 border border-amber-300/35 rounded-2xl px-3.5 py-2.5">
@@ -668,33 +647,50 @@
                     </div>
 
                     <div class="space-y-5">
-                        <!-- 經文一：彼得前書 3:7-8 -->
+                        <!-- 經文一：彼得前書 3:7-8 (靠左對齊、無引號、整齊斷行) -->
                         <div class="p-4 rounded-xl bg-white/85 border border-stone-800/15">
-                            <div class="flex items-center gap-2 mb-2.5">
+                            <div class="flex items-center gap-2 mb-3">
                                 <span class="w-2 h-2 rounded-full bg-[#a63737]"></span>
                                 <h3 class="font-serif-formal font-bold text-base text-[#a63737] tracking-wider">彼得前書 3:7-8</h3>
                             </div>
-                            <div class="lyric-body text-base text-stone-800 leading-relaxed font-medium space-y-2.5 text-left" style="text-wrap: pretty; word-break: keep-all; overflow-wrap: break-word;">
+                            <div class="lyric-body text-base text-stone-800 leading-relaxed space-y-3 text-left font-medium">
                                 <p>
-                                    「你們作丈夫的也要按情理和妻子同住；因她比你軟弱，與你一同承受生命之恩的，所以要敬重她。這樣，便叫你們的禱告沒有阻礙。
+                                    你們作丈夫的也要按情理和妻子同住；<br>
+                                    因她比你軟弱，與你一同承受生命之恩的，<br>
+                                    所以要敬重她。<br>
+                                    這樣，便叫你們的禱告沒有阻礙。
                                 </p>
                                 <p>
-                                    總而言之，你們都要同心，彼此體恤，相愛如弟兄，存慈憐謙卑的心。」
+                                    總而言之，你們都要同心，彼此體恤，<br>
+                                    相愛如弟兄，存慈憐謙卑的心。
                                 </p>
                             </div>
                         </div>
 
-                        <!-- 經文二：傳道書 4:9-12 -->
+                        <!-- 經文二：傳道書 4:9-12 (靠左對齊、整齊斷行) -->
                         <div class="p-4 rounded-xl bg-white/85 border border-stone-800/15">
-                            <div class="flex items-center gap-2 mb-2.5">
+                            <div class="flex items-center gap-2 mb-3">
                                 <span class="w-2 h-2 rounded-full bg-[#35637d]"></span>
                                 <h3 class="font-serif-formal font-bold text-base text-[#35637d] tracking-wider">傳道書 4:9-12</h3>
                             </div>
-                            <div class="lyric-body text-base text-stone-800 leading-relaxed font-medium space-y-2.5 text-left" style="text-wrap: pretty; word-break: keep-all; overflow-wrap: break-word;">
-                                <p>兩個人總比一個人好，因為二人勞碌同得美好的果效。</p>
-                                <p>若是跌倒，這人可以扶起他的同伴；若是孤身跌倒，沒有別人扶起他來，這人就有禍了。</p>
-                                <p>再者，二人同睡就都暖和，一人獨睡怎能暖和呢？</p>
-                                <p>有人攻勝孤身一人，若有二人便能敵擋他；三股合成的繩子不容易折斷。</p>
+                            <div class="lyric-body text-base text-stone-800 leading-relaxed space-y-3 text-left font-medium">
+                                <p>
+                                    兩個人總比一個人好，<br>
+                                    因為二人勞碌同得美好的果效。
+                                </p>
+                                <p>
+                                    若是跌倒，這人可以扶起他的同伴；<br>
+                                    若是孤身跌倒，沒有別人扶起他來，<br>
+                                    這人就有禍了。
+                                </p>
+                                <p>
+                                    再者，二人同睡就都暖和，<br>
+                                    一人獨睡怎能暖和呢？
+                                </p>
+                                <p>
+                                    有人攻勝孤身一人，若有二人便能敵擋他；<br>
+                                    三股合成的繩子不容易折斷。
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -726,7 +722,7 @@
 
         </main>
 
-        <!-- 底部固定導覽列 (一直顯示在手機下方，方便單手切換頁面) -->
+        <!-- 底部固定導覽列 -->
         <nav class="fixed bottom-0 left-0 right-0 z-30 flex justify-center px-3 pt-2 safe-bottom bg-gradient-to-t from-[#19171e] via-[#23202a]/95 to-transparent">
             <div class="w-full max-w-md bg-[#2d2936]/95 backdrop-blur-md border border-amber-300/45 rounded-2xl p-1.5 shadow-[0_8px_25px_rgba(0,0,0,0.65)] grid grid-cols-4 gap-1">
                 
@@ -765,7 +761,7 @@
             lucide.createIcons();
         }
 
-        // 分享流程單功能 (優先喚起手機原生分享選單，若不支援則自動複製指定文案與網址並顯示提示)
+        // 分享流程單功能
         function shareProgram() {
             const targetUrl = 'https://hellosarahttlc-dotcom.github.io/20270102/';
             const shareText = '歡迎參加榮祥 & 奕晏的結婚典禮，這是我們的電子流程😊';
@@ -812,12 +808,12 @@
             "各方好友"
         ];
 
-        // 霍格華茲四學院配色（葛來分多紅、雷文克勞藍、赫夫帕夫黃、史萊哲林綠）
+        // 霍格華茲四學院配色
         const houseColors = [
-            { bg: '#a63737', text: '#fff9eb' }, // 紅
-            { bg: '#35637d', text: '#fff9eb' }, // 藍
-            { bg: '#e5a93c', text: '#26211d' }, // 黃（搭配深色字更清晰）
-            { bg: '#386641', text: '#fff9eb' }  // 綠
+            { bg: '#a63737', text: '#fff9eb' },
+            { bg: '#35637d', text: '#fff9eb' },
+            { bg: '#e5a93c', text: '#26211d' },
+            { bg: '#386641', text: '#fff9eb' }
         ];
 
         // 渲染合影順序列表
@@ -859,7 +855,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // 歌詞與經文字體大小調整 (同步更新詩歌與經文頁面的字級與按鈕狀態)
+        // 歌詞與經文字體大小調整
         function setLyricSize(sizeClass) {
             document.querySelectorAll('.lyric-body').forEach(el => {
                 el.classList.remove('text-base', 'text-lg');
@@ -890,7 +886,7 @@
             }
         }
 
-        // 背景動態手繪小塗鴉 (漂浮小星星、愛心、閃電、金探子微光)
+        // 背景動態手繪小塗鴉
         const canvas = document.getElementById('magic-canvas');
         const ctx = canvas.getContext('2d');
         let doodles = [];
@@ -985,7 +981,6 @@
             animateDoodles();
         }
 
-        // 確保在各種預覽與載入情境下都能立即啟動動態背景
         startMagicBackground();
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', startMagicBackground);
